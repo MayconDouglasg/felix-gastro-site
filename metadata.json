@@ -1,0 +1,6 @@
+{
+  "name": "Felix Gastro - Cardápio Digital",
+  "description": "Cardápio digital e bufê para eventos da Felix Gastro na região do Cariri, com pedidos de marmitas e orçamentos para eventos via WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

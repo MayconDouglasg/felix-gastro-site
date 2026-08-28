@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #0f0d0b;
+    --bg-alt: #161210;
+    --card-bg: #1c1712;
+    --card-hover: #231c16;
+    --accent: #e0632c;
+    --accent-hover: #f07b46;
+    --accent-soft: #f0a066;
+    --gold: #c9a227;
+    --text-primary: #f4ede2;
+    --text-muted: #b3a795;
+    --text-dim: #7d7263;
+    --line: rgba(244, 237, 226, 0.10);
+    --line-strong: rgba(244, 237, 226, 0.20);
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Work Sans', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.02em;
+  }
+
+  .font-script {
+    font-family: 'Yellowtail', cursive;
+  }
+}
+
+/* Background grain effect */
+.bg-grain {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0d0b;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a221b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e0632c;
+}
